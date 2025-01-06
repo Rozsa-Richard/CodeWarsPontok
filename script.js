@@ -28,6 +28,8 @@ const apiUrl = "https://www.codewars.com/api/v1/users/";
           <p><strong>Languages:</strong> ${Object.keys(data.ranks.languages).join(", ")}</p>
           <p><strong>JavaScript Rank:</strong> ${data.ranks.languages.javascript ? data.ranks.languages.javascript.rank : "N/A"}</p>
           <p><strong>Overall Rank:</strong> ${data.ranks.overall.rank}</p>
+          <p><strong>Honor:</strong> ${data.honor}</p>
+
         `;
 
         userDataContainer.appendChild(card);
